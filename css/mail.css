@@ -85,7 +85,7 @@ body {
 .hero__container {
   padding-top: 24px;
   color: #fff;
-  background-image: url(../../img/banner/pattern.png);
+  background-image: url(../img/banner/pattern.png);
   background-position: 588px 0px;
   background-repeat: no-repeat;
   padding-left: 80px;
@@ -165,8 +165,8 @@ header {
     height: 11px;
     position: absolute;
     left: -16px;
-    top: 9px;
-    background-image: url(../../img/icon/phone.png); }
+    top: 12px;
+    background-image: url(../img/icon/phone.png); }
 
 .menu {
   width: 65%; }
