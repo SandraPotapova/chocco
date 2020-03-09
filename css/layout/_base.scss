@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+$blue: #86c3d7;
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.wrapper{
+  overflow: hidden;
+  min-width: 1100px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section{
+  height: 100%;
+}

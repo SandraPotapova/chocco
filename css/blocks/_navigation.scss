@@ -1,0 +1,38 @@
+.navigation{
+  position: fixed;
+  top: 50%;
+  right: 165px;
+  transform: translateY(-50%);
+  z-index: 100;
+
+  &__list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item{
+    margin: 5px 0;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: .3s;
+
+    &--active{
+      border: 1px solid #fff;
+    }
+
+    &:hover{
+      border: 1px solid #fff;
+    }
+  }
+
+  &__link{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+}

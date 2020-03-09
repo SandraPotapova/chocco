@@ -1,0 +1,83 @@
+.why{
+  text-align: center;
+  padding-top: 97px;
+}
+
+.why__bg{
+  position: absolute;
+  top: 91px;
+  left: 0;
+}
+
+.why__container{
+  p{
+    color: #666666;
+    width: 38%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+}
+
+.why__list{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 115px;
+  width: 89%;
+}
+
+.why__item{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 53px;
+  position: relative;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &:after{
+    content: "";
+    width: 67px;
+    height: 21px;
+    position: absolute;
+    top: 53px;
+    left: -59px;
+    background-image: url(../../img/why/points.png);
+  }
+
+  &:first-child:after{
+    display: none;
+  }
+  
+  p{
+    width: 100%;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+  h4{
+    color: #000;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+}
+
+.why__frame{
+  align-self: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.why__img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
