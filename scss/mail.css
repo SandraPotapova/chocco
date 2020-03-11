@@ -545,6 +545,14 @@ body {
   bottom: -49px;
 }
 
+.hero__img-chocco {
+  position: absolute;
+  top: 56px;
+  right: 26px;
+  width: 503px;
+  height: 523px;
+}
+
 .section__title {
   font-size: 48px;
   font-weight: 700;
