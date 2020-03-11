@@ -1,13 +1,13 @@
 .hero{
   background-color: $blue;
+  background-image: url(../img/banner/pattern.png);
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .hero__container{
   padding-top: 24px;
   color: #fff;
-  background-image: url(../img/banner/pattern.png);
-  background-position: 588px 0px;
-  background-repeat: no-repeat;
   padding-left: 80px;
   padding-right: 46px;
 }

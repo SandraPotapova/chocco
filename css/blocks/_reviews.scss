@@ -1,5 +1,12 @@
 .reviews{
   text-align: center;
+  position: relative;
+
+  .reviews__bg-two{
+    position: absolute;
+    bottom: -159px;
+    left: 0;
+  }
 }
 
 .reviews__container{
@@ -15,12 +22,6 @@
   position: absolute;
   right: 14px;
   top: 36px;
-}
-
-.reviews__bg-two{
-  position: absolute;
-  bottom: -159px;
-  left: 0;
 }
 
 .reviews__hover{
