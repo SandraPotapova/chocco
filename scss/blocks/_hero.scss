@@ -1,7 +1,7 @@
 .hero{
   background-color: $blue;
   background-image: url(../img/banner/pattern.png);
-  background-position: top right;
+  background-position: right bottom;
   background-repeat: no-repeat;
 }
 
@@ -66,6 +66,6 @@
 
 .hero__img{
   position: absolute;
-  right: 15px;
-  top: 57px;
+  right: 18px;
+  bottom: -49px;
 }

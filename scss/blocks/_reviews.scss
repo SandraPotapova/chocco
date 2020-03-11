@@ -25,8 +25,6 @@
 }
 
 .reviews__hover{
-  display: flex;
-  flex-direction: row;
   margin: 0 auto 21px;
   width: 86%;
   background-color: #f8faf9;
@@ -47,7 +45,16 @@
     top: -74px;
     left: 421px;
   }
+}
 
+.reviews__item{
+  display: none;
+}
+
+.reviews__item--active{
+  display: flex;
+  flex-direction: row;
+  
   h3{
     font-size: 30px;
     font-weight: 700;
@@ -75,18 +82,18 @@
   padding-top: 8px;
 }
 
-.reviews__list{
+.reviews__avatar-list{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 62px;
 }
 
-.reviews__item{
+.reviews__avatar-item{
   margin-right: 5px;
 }
 
-.reviews__icon{
+.reviews__avatar-icon{
   width: 78px;
   height: 78px;
   border-radius: 50%;
@@ -98,6 +105,6 @@
   }
 }
 
-.reviews__icon--activ{
+.reviews__avatar-icon--activ{
   border: 6px solid #365a49;
 }
