@@ -1,0 +1,106 @@
+.team{
+  padding-top: 2.25rem;
+  position: relative;
+}
+
+.team__bg{
+  position: absolute;
+  left: 2.0625rem;
+  bottom: -3.5625rem;
+}
+
+.team__container{
+  padding-top: 1.1875rem;
+  text-align: center;
+
+  &:before{
+    content: "";
+    position: absolute;
+    background: url(../img/team/team-bg.png);
+    left: 0;
+    bottom: -3.125rem;
+    width: 6.5rem;
+    height: 7.125rem;
+  }
+
+  .section__title{
+    margin-bottom: 2.75rem;
+  }
+}
+
+.team__list{
+  display: flex;
+  flex-direction: row;
+  margin-left: -1.25rem;
+}
+
+.team__item{
+  width: calc(100% / 4 - 1.25rem);
+  margin-left: 1.25rem;
+  text-align: center;
+}
+
+.accord__wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accord__avatar{
+  margin-bottom: 1.25rem;
+  width: 13.75rem;
+  height: 18rem;
+}
+
+.accord__avatar-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.accord__name{
+  font-size: 1.3125rem;
+  font-weight: 700;
+  position: relative;
+
+  &:after{
+    content: "";
+    border: solid 4px transparent;
+    border-bottom: solid 6px #365a49;
+    border-top-width: 0;
+    position: absolute;
+    top: 0.8125rem;
+    margin-left: 3px;
+  }
+}
+
+.accord__position{
+  font-weight: 400;
+}
+
+.accord__desc{
+  height: 0;
+  overflow: hidden;
+}
+
+.accord__text{
+  color: #666666;
+  font-weight: 300;
+}
+
+.accord__desc--active{
+  .accord__name{
+    &:after{
+    border: solid 4px transparent;
+    border-top: solid 6px #365a49;
+    border-bottom-width: 0;
+    position: absolute;
+    top: 0.8125rem;
+    margin-left: 3px;
+    }
+  }
+
+  .accord__desc{
+    height: 100%;
+  }
+}

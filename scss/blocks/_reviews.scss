@@ -4,46 +4,46 @@
 
   .reviews__bg-two{
     position: absolute;
-    bottom: -159px;
+    bottom: -9.9375rem;
     left: 0;
   }
 }
 
 .reviews__container{
-  padding-top: 52px;
+  padding-top: 3.25rem;
 
   .section__title{
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     z-index: 3;
   }
 }
 
 .reviews__bg-one{
   position: absolute;
-  right: 14px;
-  top: 36px;
+  right: 0.875rem;
+  top: 2.25rem;
 }
 
 .reviews__hover{
-  margin: 0 auto 21px;
+  margin: 0 auto 1.3125rem;
   width: 86%;
   background-color: #f8faf9;
   background-image: url(../img/reviews/bg-rw3.png);
   background-position: right top;
   background-repeat: no-repeat;
-  padding: 51px 45px 34px;
+  padding: 3.1875rem 2.8125rem 2.125rem;
   text-align: start;
   position: relative;
 
   &:before{
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     position: absolute;
     background-color: #fff;
     border-radius: 50%;
-    top: -74px;
-    left: 421px;
+    top: -4.625rem;
+    left: 26.3125rem;
   }
 }
 
@@ -56,15 +56,15 @@
   flex-direction: row;
   
   h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
   }
 
   p{
     width: 76%;
     line-height: 1.25;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
     color: #666666;
   }
 }
@@ -75,18 +75,18 @@
 
 .reviews__avatar{
   width: 30%;
-  margin-right: 23px;
+  margin-right: 1.4375rem;
 }
 
 .reviews__content{
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 
 .reviews__avatar-list{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 62px;
+  margin-bottom: 3.875rem;
 }
 
 .reviews__avatar-item{
@@ -94,8 +94,8 @@
 }
 
 .reviews__avatar-icon{
-  width: 78px;
-  height: 78px;
+  width: 4.875rem;
+  height: 4.875rem;
   border-radius: 50%;
   border: 6px solid transparent;
   transition: .3s;

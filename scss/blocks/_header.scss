@@ -1,31 +1,35 @@
 header{
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.header__container{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo-link{
-  height: 39px;
+  height: 2.4375rem;
 }
 
 .menu__link, .phone__number{
   color: #fff;
 }
 
-.phone{
-  font-size: 24px;
+.phone-link{
+  font-size: 1.5rem;
   text-transform: uppercase;
-  position: relative;
-  margin-right: 32px;
+}
 
-  &:before{
-    content: "";
-    width: 12px;
-    height: 11px;
-    position: absolute;
-    left: -16px;
-    top: 12px;
-    background-image: url(../img/icon/phone.png);
-  }
+.phone__number{
+  display: flex;
+  align-self: center;
+}
+
+.phone-icon{
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: #fff;
+  align-self: center;
 }

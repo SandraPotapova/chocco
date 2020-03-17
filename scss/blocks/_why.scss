@@ -1,38 +1,40 @@
 .why{
   text-align: center;
-  padding-top: 102px;
+  padding-top: 6.125rem;
   position: relative;
-
-  .why__bg{
-    position: absolute;
-    top: 188px;
-    left: 0;
-  }
 }
 
 
 
 .why__container{
+  &:before{
+    content: "";
+    position: absolute;
+    background: url(../img/why/bg-why.png);
+    left: 0;
+    bottom: -7.3125rem;
+    width: 11.9375rem;
+    height: 35.6875rem;
+  }
+
   p{
     color: #666666;
-    width: 38%;
+    width: 44%;
     align-self: center;
-    margin-bottom: 50px;
+    margin: 0 auto 3.125rem;
   }
 }
 
 .why__list{
   display: flex;
   flex-direction: row;
-  margin: 0 auto 115px;
-  width: 89%;
 }
 
 .why__item{
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin-right: 53px;
+  margin-right: 4.5rem;
   position: relative;
 
   &:last-child{
@@ -41,11 +43,11 @@
 
   &:after{
     content: "";
-    width: 67px;
-    height: 21px;
+    width: 4.1875rem;
+    height: 1.3125rem;
     position: absolute;
-    top: 53px;
-    left: -59px;
+    top: 3.3125rem;
+    left: -3.8125rem;
     background-image: url(../../img/why/points.png);
   }
 
@@ -62,20 +64,20 @@
 
   h4{
     color: #000;
-    font-size: 27px;
+    font-size: 1.6875rem;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
   }
 }
 
-.why__frame{
+.why--frame{
   align-self: center;
-  width: 125px;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   border-radius: 50%;
   background-color: #f2f5f4;
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 .why__img{
@@ -83,4 +85,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 4.6875rem;
+  height: 4.3125rem;
+  fill: #2e2e2d;
 }

@@ -1,0 +1,134 @@
+.order{
+  background-image: url(../img/order/order-bg1.png);
+  background-position: center center;
+  background-repeat: repeat-x;
+}
+
+.order__container{
+  width: 75%;
+  padding-top: 4.5rem;
+
+  .section__title{
+    color: #365a49;
+    margin-bottom: 2.3125rem;
+  }
+}
+
+.order__form-tag,
+.order__form-row_double,
+.order__form-row_quatro{
+  display: flex;
+  flex-direction: row;
+}
+
+.order__form{
+  width: 96%;
+  margin-left: -1.25rem;
+}
+
+.order__form-col{
+  width: 49%;
+  margin-left: 1.25rem;
+}
+
+.order__form-label{
+  color: #365a49;
+  font-weight: 400;
+}
+
+.order__form-row{
+  margin-bottom: 0.875rem;
+}
+
+.order__form-block{
+  display: block;
+  width: 100%;
+}
+
+.order__form-row_double{
+  margin-left: -1.25rem;
+
+  .order__form-block{
+    width: calc(100% / 2 - 1.25rem);
+    margin-left: 1.25rem;
+  }
+}
+
+.order__form-row_quatro{
+  margin-left: -1.25rem;
+
+  .order__form-block{
+    width: calc(100% / 4 - 1.25rem);
+    margin-left: 1.25rem;
+  }
+}
+
+.order__form-input{
+  padding: 1.1875rem 0.6875rem;
+  width: 100%;
+  border: 3px solid transparent;
+
+  &:focus{
+    border-color: #dee2bd;
+    outline: none;
+  }
+}
+
+.order__form-input_textarea{
+  height: 11.25rem;
+  resize: none;
+}
+
+.order__form-row_radio{
+  display: flex;
+  flex-direction: row;
+}
+
+.order__radio{
+  position: relative;
+  margin-right: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.order__radio-title{
+  color: #365a49;
+  font-weight: 400;
+}
+
+.order__radio-elem{
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.order__radio-fake{
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  margin-right: 0.625rem;
+  
+  &:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #365a49;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.order__radio-elem:checked{
+  &+.order__radio-fake{
+    &:after{
+      width: 0.875rem;
+      height: 0.875rem;
+    }
+  }
+}
