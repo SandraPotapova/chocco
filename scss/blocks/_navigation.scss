@@ -26,6 +26,10 @@
     &:hover{
       border: 1px solid #fff;
     }
+
+    @include tablets{
+      display: none;
+    }
   }
 
   &__link{

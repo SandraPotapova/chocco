@@ -66,8 +66,8 @@
   &:after{
     content: "";
     border: solid 4px transparent;
-    border-bottom: solid 6px #365a49;
-    border-top-width: 0;
+    border-top: solid 6px #365a49;
+    border-bottom-width: 0;
     position: absolute;
     top: 0.8125rem;
     margin-left: 3px;
@@ -91,12 +91,13 @@
 .accord__desc--active{
   .accord__name{
     &:after{
-    border: solid 4px transparent;
-    border-top: solid 6px #365a49;
-    border-bottom-width: 0;
-    position: absolute;
-    top: 0.8125rem;
-    margin-left: 3px;
+      content: "";
+      border: solid 4px transparent;
+      border-bottom: solid 6px #365a49;
+      border-top-width: 0;
+      position: absolute;
+      top: 0.8125rem;
+      margin-left: 3px;
     }
   }
 

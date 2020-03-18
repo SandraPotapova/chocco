@@ -15,6 +15,7 @@
   .section__title{
     margin-bottom: 1.5rem;
     z-index: 3;
+    position: relative;
   }
 }
 
@@ -43,7 +44,8 @@
     background-color: #fff;
     border-radius: 50%;
     top: -4.625rem;
-    left: 26.3125rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

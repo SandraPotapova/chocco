@@ -7,6 +7,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablets{
+    padding-left: 1rem;
+  }
 }
 
 .logo-link{
@@ -20,6 +24,10 @@ header{
 .phone-link{
   font-size: 1.5rem;
   text-transform: uppercase;
+
+  @include tablets{
+   display: none; 
+  }
 }
 
 .phone__number{
@@ -32,4 +40,5 @@ header{
   height: 0.75rem;
   fill: #fff;
   align-self: center;
+  margin-right: 0.375rem;
 }

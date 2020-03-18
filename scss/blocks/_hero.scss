@@ -3,6 +3,11 @@
   background-image: url(../img/banner/pattern.png);
   background-position: right bottom;
   background-repeat: no-repeat;
+
+  @include tablets{
+    background-position-y: 15%;
+    background-size: 65%;
+  }
 }
 
 .hero__content{
@@ -28,6 +33,20 @@
     font-size: 1.3125rem;
     margin-bottom: 1.875rem;
     padding-right: 6rem;
+
+    @include tablets{
+      padding-right: 0;
+      width: 55%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @include tablets{
+    width: 90%;
+    text-align: center;
+    padding-top: 66%;
+    margin: 0 auto;
   }
 }
 
@@ -36,11 +55,19 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 0.4375rem;
+
+  @include tablets{
+    margin-bottom: 0.93rem;
+  }
 }
 
 .hero__text-list, .hero__text-item{
   display: flex;
   flex-direction: row;
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .hero__text-desc{
@@ -71,18 +98,40 @@
   position: absolute;
   right: -3.875rem;
   bottom: -2.875rem;
+
+  @include tablets{
+    width: 19.6rem;
+    height: 16.13rem;
+    top: 27%;
+    right: 23%;
+  }
 }
 
 .hero__img-two{
   position: absolute;
   bottom: -3.125rem;
   left: -3.1875rem;
+
+  @include tablets{
+    width: 2.6rem;
+    height: 5.06rem;
+    top: 40%;
+    left: 26%;
+  }
 }
 
 .hero__img-three{
   position: absolute;
   right: 11.125rem;
   bottom: 2.3125rem;
+
+  @include tablets{
+    transform: rotate(90deg);
+    width: 14rem;
+    height: 13.3rem;
+    top: 20%;
+    left: 35%;
+  }
 }
 
 .hero__img-chocco{
@@ -91,4 +140,12 @@
   right: -3.1875rem;
   width: 31.4375rem;
   height: 32.6875rem;
+
+  @include tablets{
+    width: 22.86rem;
+    height: 23.73rem;
+    top: 7.0625rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

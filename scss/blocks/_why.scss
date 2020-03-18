@@ -2,6 +2,10 @@
   text-align: center;
   padding-top: 6.125rem;
   position: relative;
+
+  @include tablets{
+    padding-top: 37%;
+  }
 }
 
 
@@ -10,11 +14,27 @@
   &:before{
     content: "";
     position: absolute;
-    background: url(../img/why/bg-why.png);
+    background: url(../img/why/why-bg1.png);
     left: 0;
-    bottom: -7.3125rem;
+    bottom: -6.3125rem;
+    width: 10.0625rem;
+    height: 19.6875rem;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    background: url(../img/why/why-bg2.png);
+    left: 0;
+    bottom: 24%;
     width: 11.9375rem;
-    height: 35.6875rem;
+    height: 19.625rem;
+
+    @include tablets{
+      width: 11.4rem;
+      height: 18.8rem;
+      top: 9%;
+    }
   }
 
   p{
@@ -22,6 +42,10 @@
     width: 44%;
     align-self: center;
     margin: 0 auto 3.125rem;
+
+    @include tablets{
+      width: 56%;
+    }
   }
 }
 
@@ -48,7 +72,11 @@
     position: absolute;
     top: 3.3125rem;
     left: -3.8125rem;
-    background-image: url(../../img/why/points.png);
+    background-image: url(../img/why/points.png);
+
+    @include tablets{
+      display: none;
+    }
   }
 
   &:first-child:after{
