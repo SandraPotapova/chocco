@@ -1,0 +1,32 @@
+.maps__container{
+  background-image: url(../img/maps/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.maps__logo-one{
+  position: absolute;
+  top: 19%;
+  left: 33%;
+}
+
+.maps__logo-two{
+  position: absolute;
+  top: 23%;
+  right: 20%;
+}
+
+.maps__logo-three{
+  position: absolute;
+  top: 49%;
+  right: 39%;
+}
+
+.maps__logo-four{
+  position: absolute;
+  top: 68%;
+  left: 30%;
+}

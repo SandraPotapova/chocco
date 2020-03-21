@@ -11,6 +11,7 @@
   .section__title{
     color: #365a49;
     margin-bottom: 2.3125rem;
+    text-align: center;
   }
 }
 
@@ -22,7 +23,6 @@
 }
 
 .order__form{
-  width: 96%;
   margin-left: -1.25rem;
 }
 
@@ -130,5 +130,65 @@
       width: 0.875rem;
       height: 0.875rem;
     }
+  }
+}
+
+.order__radio_checkbox{
+  margin-bottom: 2.1875rem;
+
+  .order__radio-fake{
+    width: 1.625rem;
+    height: 1.625rem;
+    background: #fff;
+    position: relative;
+    margin-right: 0.625rem;
+    border-radius: 0;
+  }
+
+  .order__radio-elem:checked{
+    &+.order__radio-fake{
+      &:after{
+        left: 0.5625rem;
+        top: 0.3125rem;
+        width: 0.3125rem;
+        height: 0.625rem;
+        border-radius: 0;
+        background-color: transparent;
+        border: solid #365a49;
+        border-width: 0 0.1875rem 0.1875rem 0;
+        transform: rotate(45deg);
+      }
+    }
+
+  }
+}
+
+.order__form-button{
+  color: #fff;
+  background-color: #365a49;
+  margin-bottom: 0;
+
+  &:hover{
+    color: #365a49;
+    background-color: #fff;
+  }  
+}
+
+
+.order__form-button_reset{
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #365a49;
+  margin-left: 1.125rem;
+  
+
+  &:hover{
+    background: none;
+    color: #000000;
+  }
+
+  &:focus{
+    outline: none;
   }
 }

@@ -8,8 +8,6 @@
   }
 }
 
-
-
 .why__container{
   &:before{
     content: "";
@@ -19,6 +17,11 @@
     bottom: -6.3125rem;
     width: 10.0625rem;
     height: 19.6875rem;
+
+    @include tablets{
+      background-size: cover;
+      bottom: -4.3125rem
+    }
   }
 
   &:after{
@@ -45,6 +48,7 @@
 
     @include tablets{
       width: 56%;
+      margin: 0 auto 4.125rem;
     }
   }
 }
@@ -57,7 +61,6 @@
 .why__item{
   display: flex;
   flex-direction: column;
-  width: 30%;
   margin-right: 4.5rem;
   position: relative;
 
@@ -96,6 +99,10 @@
     font-weight: 700;
     margin-bottom: 0.875rem;
   }
+
+  @include tablets{
+    margin-right: 3.5rem;
+  }
 }
 
 .why--frame{
@@ -106,6 +113,10 @@
   background-color: #f2f5f4;
   position: relative;
   margin-bottom: 1.6875rem;
+
+  @include tablets{
+    margin-bottom: 1rem;
+  }
 }
 
 .why__img{

@@ -9,4 +9,10 @@
   background-color: #fff;
   margin-bottom: 4.1875rem;
   cursor: pointer;
+  transition: .5s;
+}
+
+.btn:hover{
+  color: #fff;
+  background-color: #365a49;
 }

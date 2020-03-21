@@ -799,6 +799,13 @@ header {
   background-color: #fff;
   margin-bottom: 4.1875rem;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #365a49;
 }
 
 .why {
@@ -821,6 +828,13 @@ header {
   bottom: -6.3125rem;
   width: 10.0625rem;
   height: 19.6875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .why__container:before {
+    background-size: cover;
+    bottom: -4.3125rem;
+  }
 }
 
 .why__container:after {
@@ -853,6 +867,7 @@ header {
 @media screen and (max-width: 768px) {
   .why__container p {
     width: 56%;
+    margin: 0 auto 4.125rem;
   }
 }
 
@@ -874,7 +889,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
   margin-right: 4.5rem;
   position: relative;
 }
@@ -917,6 +931,12 @@ header {
   margin-bottom: 0.875rem;
 }
 
+@media screen and (max-width: 768px) {
+  .why__item {
+    margin-right: 3.5rem;
+  }
+}
+
 .why--frame {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -927,6 +947,12 @@ header {
   background-color: #f2f5f4;
   position: relative;
   margin-bottom: 1.6875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .why--frame {
+    margin-bottom: 1rem;
+  }
 }
 
 .why__img {
@@ -945,6 +971,12 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .team {
+    padding-top: 0;
+  }
+}
+
 .team__bg {
   position: absolute;
   left: 2.0625rem;
@@ -954,6 +986,12 @@ header {
 .team__container {
   padding-top: 1.1875rem;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team__container {
+    padding-top: 0;
+  }
 }
 
 .team__container:before {
@@ -970,6 +1008,12 @@ header {
   margin-bottom: 2.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .team__container .section__title {
+    margin-bottom: 1.75rem;
+  }
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,10 +1025,28 @@ header {
   margin-left: -1.25rem;
 }
 
+@media screen and (max-width: 768px) {
+  .team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .team__item {
   width: calc(100% / 4 - 1.25rem);
   margin-left: 1.25rem;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team__item {
+    width: 32%;
+  }
 }
 
 .accord__wrap {
@@ -1000,10 +1062,23 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .accord__wrap {
+    margin: 5px auto;
+  }
+}
+
 .accord__avatar {
   margin-bottom: 1.25rem;
   width: 13.75rem;
   height: 18rem;
+}
+
+@media screen and (max-width: 768px) {
+  .accord__avatar {
+    height: 0;
+    margin-bottom: 0;
+  }
 }
 
 .accord__avatar-img {
@@ -1053,8 +1128,36 @@ header {
   margin-left: 3px;
 }
 
+@media screen and (max-width: 768px) {
+  .accord__desc--active .accord__name {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .accord__desc--active .accord__desc {
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .accord__desc--active .accord__desc {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+.accord__desc--active .accord__avatar {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .accord__desc--active .accord__avatar {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .choice {
@@ -1185,7 +1288,6 @@ header {
 
 .reviews__hover {
   margin: 0 auto 1.3125rem;
-  width: 86%;
   background-color: #f8faf9;
   background-image: url(../img/reviews/bg-rw3.png);
   background-position: right top;
@@ -1297,6 +1399,7 @@ header {
 .order__container .section__title {
   color: #365a49;
   margin-bottom: 2.3125rem;
+  text-align: center;
 }
 
 .order__form-tag,
@@ -1312,7 +1415,6 @@ header {
 }
 
 .order__form {
-  width: 96%;
   margin-left: -1.25rem;
 }
 
@@ -1428,5 +1530,140 @@ header {
 .order__radio-elem:checked + .order__radio-fake:after {
   width: 0.875rem;
   height: 0.875rem;
+}
+
+.order__radio_checkbox {
+  margin-bottom: 2.1875rem;
+}
+
+.order__radio_checkbox .order__radio-fake {
+  width: 1.625rem;
+  height: 1.625rem;
+  background: #fff;
+  position: relative;
+  margin-right: 0.625rem;
+  border-radius: 0;
+}
+
+.order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
+  left: 0.5625rem;
+  top: 0.3125rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid #365a49;
+  border-width: 0 0.1875rem 0.1875rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.order__form-button {
+  color: #fff;
+  background-color: #365a49;
+  margin-bottom: 0;
+}
+
+.order__form-button:hover {
+  color: #365a49;
+  background-color: #fff;
+}
+
+.order__form-button_reset {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #365a49;
+  margin-left: 1.125rem;
+}
+
+.order__form-button_reset:hover {
+  background: none;
+  color: #000000;
+}
+
+.order__form-button_reset:focus {
+  outline: none;
+}
+
+.maps__container {
+  background-image: url(../img/maps/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.maps__logo-one {
+  position: absolute;
+  top: 19%;
+  left: 33%;
+}
+
+.maps__logo-two {
+  position: absolute;
+  top: 23%;
+  right: 20%;
+}
+
+.maps__logo-three {
+  position: absolute;
+  top: 49%;
+  right: 39%;
+}
+
+.maps__logo-four {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 21px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__address {
+  font-size: 21px;
+}
+
+.footer__contacts .phone__number {
+  color: #365a49;
+  font-size: 21px;
+}
+
+.footer__contacts .phone-icon {
+  fill: #365a49;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  margin-left: 1rem;
+  opacity: 0.3;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.social__item:hover {
+  opacity: 1;
+}
+
+.social__icon {
+  width: 1.4375rem;
+  height: 1.25rem;
 }
 /*# sourceMappingURL=mail.css.map */
