@@ -1,10 +1,5 @@
 .team{
-  padding-top: 2.25rem;
   position: relative;
-
-  @include tablets{
-    padding-top: 0;
-  }
 }
 
 .team__bg{
@@ -14,22 +9,11 @@
 }
 
 .team__container{
-  padding-top: 1.1875rem;
   text-align: center;
-
-  @include tablets{
-    padding-top: 0;
-  }
-
-  &:before{
-    content: "";
-    position: absolute;
-    background: url(../img/team/team-bg.png);
-    left: 0;
-    bottom: -3.125rem;
-    width: 6.5rem;
-    height: 7.125rem;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .section__title{
     margin-bottom: 2.75rem;
@@ -59,9 +43,14 @@
   @include tablets{
     width: 32%;
   }
+
+  @include phones{
+    margin-left: 0;
+    width: 61%;
+  }
 }
 
-.accord__wrap{
+.team-accord__wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,9 +58,13 @@
   @include tablets{
     margin: 5px auto;
   }
+
+  @include phones{
+    margin: 0;
+  }
 }
 
-.accord__avatar{
+.team-accord__avatar{
   margin-bottom: 1.25rem;
   width: 13.75rem;
   height: 18rem;
@@ -82,13 +75,13 @@
   }
 }
 
-.accord__avatar-img{
+.team-accord__avatar-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.accord__name{
+.team-accord__name{
   font-size: 1.3125rem;
   font-weight: 700;
   position: relative;
@@ -102,24 +95,28 @@
     top: 0.8125rem;
     margin-left: 3px;
   }
+
+  @include phones{
+    font-size: 21px;
+  }
 }
 
-.accord__position{
+.team-accord__position{
   font-weight: 400;
 }
 
-.accord__desc{
+.team-accord__desc{
   height: 0;
   overflow: hidden;
 }
 
-.accord__text{
+.team-accord__text{
   color: #666666;
   font-weight: 300;
 }
 
-.accord__desc--active{
-  .accord__name{
+.team-accord__desc--active{
+  .team-accord__name{
     &:after{
       content: "";
       border: solid 4px transparent;
@@ -135,7 +132,7 @@
     }
   }
 
-  .accord__desc{
+  .team-accord__desc{
     height: 100%;
 
     @include tablets{
@@ -143,11 +140,16 @@
     }
   }
 
-  .accord__avatar{
+  .team-accord__avatar{
     height: 100%;
 
     @include tablets{
       order: 3;
+    }
+
+    @include phones{
+      width: 10.9rem;
+      height: 14.15rem;
     }
   }
 }

@@ -6,6 +6,21 @@
   color: #fff;
   position: relative;
 
+  &:before{
+    content: "";
+    position: absolute;
+    background: url(../img/team/team-bg.png);
+    left: 0;
+    top: -7%;
+    width: 6.5rem;
+    height: 7.125rem;
+    z-index: 10;
+
+    @include tablets{
+      background-size: cover;
+    }
+  }
+
   .section__title{
     color: #fff;
     position: absolute;
@@ -25,39 +40,46 @@
 }
 
 .choice__accordeon{
+  display: flex;
+  max-height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  display: flex;
 }
 
 .choice__accordeon-item{
   display: flex;
+  position: relative;
 }
 
 .choice__element-milk{
+  .choice__element-label{
   background: #333537 url(../img/choice/coco.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  }
 }
 
 .choice__element-honey{
+  .choice__element-label{
   background: #333537 url(../img/choice/honey.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  }
 }
 
 .choice__element-berries{
+  .choice__element-label{
   background: #333537 url(../img/choice/berries.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  }
 }
 
-.choice__element-link{
+.choice__element-label{
   width: 6.25rem;
   display: block;
   height: 100%;
@@ -79,13 +101,35 @@
 }
 
 .choice__element-desc{
-  background: #333537;
+  background-color: rgba(51, 53, 55, 0.8);
   width: 0;
   height: 100%;
   overflow: hidden;
   position: relative;
+  max-width: 33.125rem;
 }
 
 .choice__element-text{
-  padding: 1rem 1rem;
+  padding: 4rem 5rem 0 1rem;
+  color: #fff;
+  height: 100%;
+}
+
+.choice__element-close{
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
+.choice__element-close-icon{
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  opacity: 0.7;
+}
+
+.choice__accordeon-item--active{
+  .choice__element-desc{
+    width: 100%;
+  }
 }

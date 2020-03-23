@@ -1,17 +1,51 @@
 .order{
   background-image: url(../img/order/order-bg1.png);
-  background-position: center center;
-  background-repeat: repeat-x;
 }
 
 .order__container{
   width: 75%;
-  padding-top: 4.5rem;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../img/order/order-bg2.png);
+    width: 2.9375rem;
+    height: 3rem;
+    top: 81%;
+    left: -14%;
+
+    @include tablets{
+      display: none;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    background: url(../img/order/order-bg3.png);
+    width: 8.4375rem;
+    height: 11.75rem;
+    top: 62%;
+    right: -14%;
+
+    @include tablets{
+      display: none;
+    }
+  }
 
   .section__title{
     color: #365a49;
     margin-bottom: 2.3125rem;
     text-align: center;
+  }
+
+  @include phones{
+    width: 100%;
   }
 }
 
@@ -22,6 +56,13 @@
   flex-direction: row;
 }
 
+.order__form-tag{
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .order__form{
   margin-left: -1.25rem;
 }
@@ -29,6 +70,14 @@
 .order__form-col{
   width: 49%;
   margin-left: 1.25rem;
+
+  @include tablets{
+    width: 77%;
+  }
+
+  @include phones{
+    width: 90%;
+  }
 }
 
 .order__form-label{
@@ -68,6 +117,10 @@
   width: 100%;
   border: 3px solid transparent;
 
+  @include tablets{
+    padding: 0.6rem;
+  }
+
   &:focus{
     border-color: #dee2bd;
     outline: none;
@@ -77,11 +130,19 @@
 .order__form-input_textarea{
   height: 11.25rem;
   resize: none;
+  
+  @include tablets{
+    height: 5.3rem;
+  }
 }
 
 .order__form-row_radio{
   display: flex;
   flex-direction: row;
+
+  @include phones{
+    justify-content: center;
+  }
 }
 
 .order__radio{
@@ -160,6 +221,17 @@
       }
     }
 
+  }
+
+  @include phones{
+    justify-content: center;
+  }
+}
+
+.order__form-row-btn{
+  @include tablets{
+    display: flex;
+    justify-content: center;
   }
 }
 

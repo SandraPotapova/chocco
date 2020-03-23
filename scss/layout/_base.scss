@@ -76,10 +76,16 @@ body{
   @include tablets{
     min-height: 66.6rem;
   }
+
+  @include phones{
+    min-height: 61.54rem;
+  }
 }
 
 .container{
   margin: 0 auto;
   width: 98%;
   max-width: 58.75rem;
+  align-items: center;
+
 }
