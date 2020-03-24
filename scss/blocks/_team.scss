@@ -41,7 +41,7 @@
   text-align: center;
 
   @include tablets{
-    width: 32%;
+    width: 50%;
   }
 
   @include phones{
@@ -103,6 +103,10 @@
 
 .team-accord__position{
   font-weight: 400;
+
+  @include tablets{
+    margin-top: 1rem;
+  }
 }
 
 .team-accord__desc{

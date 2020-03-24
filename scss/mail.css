@@ -1182,7 +1182,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .team__item {
-    width: 32%;
+    width: 50%;
   }
 }
 
@@ -1262,6 +1262,12 @@ header {
 
 .team-accord__position {
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .team-accord__position {
+    margin-top: 1rem;
+  }
 }
 
 .team-accord__desc {
@@ -1672,7 +1678,7 @@ header {
   border: 6px solid #365a49;
 }
 
-.reviews__avatar-icon--activ {
+.reviews__avatar-item--activ .reviews__avatar-icon {
   border: 6px solid #365a49;
 }
 
