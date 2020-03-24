@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
 
-    <section class="section hero">
+    <section class="section hero" id="hero">
         <header class="header">
           <div class="container header__container">
             <a href="#" class="logo-link">
@@ -20,25 +20,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#hero" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#bars" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#choice" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#work" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Kонтакты</a>
+                  <a href="#maps" class="menu__link">Kонтакты</a>
                 </li>
               </ul>
             </nav>      
@@ -104,39 +104,39 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--active">
-              <a href="#" class="navigation__link"></a>
+              <a href="#hero" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#why" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#bars" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#team" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#choice" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#reviews" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#work" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#order" class="navigation__link"></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"></a>
+              <a href="#maps" class="navigation__link"></a>
             </li>
           </ul>
         </nav>  
     </section>
-    <section class="section why">
+    <section class="section why" id="why">
       <div class="container why__container">
         <h1 class="section__title"> почему chocco?</h1>
-        <p>В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
+        <p class="why__desc">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
         <ul class="why__list">
           <li class="why__item">
             <div class="why--frame">
@@ -174,10 +174,10 @@
         </ul>
       </div>
     </section>
-    <section class="section bars">
+    <section class="section bars" id="bars">
 
     </section>
-    <section class="section team">
+    <section class="section team" id="team">
     <div class="container team__container">
       <h1 class="section__title">команда</h1>
       <ul class="team__list">
@@ -209,7 +209,7 @@
             </div>
           </div>
         </li>
-        <li class="team__item team-accord team-accord__desc--active">
+        <li class="team__item team-accord team-accord--active">
           <div class="team-accord__wrap">
             <div class="team-accord__avatar">
               <img src="./img/team/team-avatar3.png" alt="avatar" class="team-accord__avatar-img">
@@ -240,64 +240,66 @@
       </ul>
     </div>
     </section>
-    <section class="section choice">
+    <section class="section choice" id="choice">
       <div class="opacity"></div>
       <h1 class="section__title">меню</h1>
-      <ul class="choice__accordeon">
-        <li class="choice__accordeon-item choice__element-milk choice__accordeon-item--active">
-          <div class="choice__element-label">
-            <div class="choice__element-title">Батончики с молоком</div>
-          </div>
-          <div class="choice__element-desc">
-            <div class="choice__element-close">
-              <svg class="choice__element-close-icon">
-                <use xlink:href="./sprite.svg#close"></use>
-              </svg>
+      <div class="choice__accordeon">
+        <ul class="choice__accordeon-list">
+          <li class="choice__accordeon-item choice__element-milk choice__accordeon-item--active">
+            <div class="choice__element-label">
+              <div class="choice__element-title">Батончики с молоком</div>
             </div>
-            <div class="choice__element-text">
-              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
-              а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+            <div class="choice__element-desc">
+              <div class="choice__element-close">
+                <svg class="choice__element-close-icon">
+                  <use xlink:href="./sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="choice__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
+                а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="choice__accordeon-item choice__element-honey">
-          <div class="choice__element-label">
-            <div class="choice__element-title">Батончики с молоком</div>
-          </div>
-          <div class="choice__element-desc">
-            <div class="choice__element-close">
-              <svg class="choice__element-close-icon">
-                <use xlink:href="./sprite.svg#close"></use>
-              </svg>
+          </li>
+          <li class="choice__accordeon-item choice__element-honey">
+            <div class="choice__element-label">
+              <div class="choice__element-title">Батончики с молоком</div>
             </div>
-            <div class="choice__element-text">
-              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
-              а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+            <div class="choice__element-desc">
+              <div class="choice__element-close">
+                <svg class="choice__element-close-icon">
+                  <use xlink:href="./sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="choice__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
+                а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="choice__accordeon-item choice__element-berries">
-          <div class="choice__element-label">
-            <div class="choice__element-title">Батончики с молоком</div>
-          </div>
-          <div class="choice__element-desc">
-            <div class="choice__element-close">
-              <svg class="choice__element-close-icon">
-                <use xlink:href="./sprite.svg#close"></use>
-              </svg>
+          </li>
+          <li class="choice__accordeon-item choice__element-berries">
+            <div class="choice__element-label">
+              <div class="choice__element-title">Батончики с молоком</div>
             </div>
-            <div class="choice__element-text">
-              Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
-              Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
-              а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+            <div class="choice__element-desc">
+              <div class="choice__element-close">
+                <svg class="choice__element-close-icon">
+                  <use xlink:href="./sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="choice__element-text">
+                Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
+                Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, 
+                а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="section reviews">
+    <section class="section reviews" id="reviews">
       <img src="./img/reviews/bg-rw2.png" alt="" class="reviews__bg-two">
       <div class="container reviews__container">
         <img src="./img/reviews/bg-rw1.png" alt="" class="reviews__bg-one">
@@ -340,10 +342,10 @@
         </ul>
       </div>
     </section>
-    <section class="section work">
+    <section class="section work" id="work">
 
     </section>
-    <section class="section order">
+    <section class="section order" id="order">
       <div class="container order__container">
         <div class="section__title">Закажите доставку</div>
         <div class="order__form">
@@ -421,7 +423,7 @@
         </div>
       </div>
     </section>
-    <section class="section maps">
+    <section class="section maps" id="maps">
       <div class="container maps__container">
         <img src="./img/maps/maps-logo.png" alt="" class="maps__logo-one">
         <img src="./img/maps/maps-logo.png" alt="" class="maps__logo-two">

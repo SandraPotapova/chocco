@@ -26,6 +26,10 @@
     position: absolute;
     top: 13%;
     left: 15%;
+
+    @include tablets{
+      display: none;
+    }
   }
 
   .opacity{
@@ -41,15 +45,31 @@
 
 .choice__accordeon{
   display: flex;
-  max-height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.choice__accordeon-list{
+  display: flex;
+  height: 100%;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 50%;
+
+  @include tablets{
+    width: 100%;
+  }
 }
 
 .choice__accordeon-item{
-  display: flex;
   position: relative;
+  overflow: hidden;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100px;
+  width: 100px;
+  transition: all 0.5s;
+  background-color: rgba(51, 53, 55, 0.8);
 }
 
 .choice__element-milk{
@@ -80,11 +100,12 @@
 }
 
 .choice__element-label{
-  width: 6.25rem;
-  display: block;
-  height: 100%;
-  position: relative;
-  flex-shrink: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
 }
 
 .choice__element-title{
@@ -101,24 +122,22 @@
 }
 
 .choice__element-desc{
-  background-color: rgba(51, 53, 55, 0.8);
-  width: 0;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  max-width: 33.125rem;
+  padding: 51px 0 0 106px;
+  height: 100vh;
 }
 
 .choice__element-text{
-  padding: 4rem 5rem 0 1rem;
   color: #fff;
-  height: 100%;
+  width: 85%;
+  padding-left: 19px;
 }
 
 .choice__element-close{
   position: absolute;
   top: 3%;
   right: 5%;
+  cursor: pointer;
+  display: none;
 }
 
 .choice__element-close-icon{
@@ -129,7 +148,19 @@
 }
 
 .choice__accordeon-item--active{
-  .choice__element-desc{
+  flex: 1 0 auto;
+
+  .choice__element-close{
+    display: block;
+  }
+
+  @include tablets{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    z-index: 8;
   }
 }

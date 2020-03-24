@@ -46,21 +46,21 @@
       display: none;
     }
   }
+}
 
-  p{
-    color: #666666;
-    width: 44%;
-    align-self: center;
-    margin: 0 auto 3.125rem;
+.why__desc{
+  color: #666666;
+  width: 44%;
+  align-self: center;
+  margin: 0 auto 3.125rem;
 
-    @include tablets{
-      width: 56%;
-      margin: 0 auto 4.125rem;
-    }
+  @include tablets{
+    width: 56%;
+    margin: 0 auto 4.125rem;
+  }
 
-    @include phones{
-      width: 100%;
-    }
+  @include phones{
+    width: 100%;
   }
 }
 
