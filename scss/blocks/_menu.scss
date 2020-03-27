@@ -1,8 +1,26 @@
 .menu{
   width: 70%;
+  transition: none;
 
   @include tablets{
-   display: none; 
+   visibility: hidden;
+   overflow: hidden;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   opacity: 0;
+   background: $blue;
+   text-align: center;
+   transition: all 0.3s;
+   z-index: 20;
+   width: 100%;
+
+   &--active{
+     visibility: visible;
+     opacity: 1;
+   }
   }
 }
 
@@ -10,6 +28,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5.7rem;
+  }
 }
 
 .menu__item{
@@ -18,18 +42,46 @@
   &:first-child{
     margin-left: 0;
   }
-}
-
-.hamburger-menu__icon{
-  display: none;
 
   @include tablets{
-    display: block;
+    margin-left: 0;
+    padding: 1rem 0;
+    font-size: 21px;
   }
 }
 
-.hamburger-menu__svg{
+.hamburger{
+  position: relative;
+  z-index: 30;
+
+  .hamburger__svg-close{
+    display: none;
+  }
+
+  .hamburger__svg-menu{
+    display: none;
+
+    @include tablets{
+      display: block;
+    }
+  }
+
+  &--active{
+    .hamburger__svg-menu{
+      display: none;
+    }
+
+    .hamburger__svg-close{
+      display: block;
+    }
+  }
+}
+
+.hamburger__svg{
   fill: #ffffff;
   width: 1.5rem;
   height: 1.5rem;
 }
+
+
+

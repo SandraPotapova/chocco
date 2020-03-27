@@ -1,0 +1,119 @@
+.bars{
+  background: #f8faf9;
+}
+
+.bars__container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.arrow__left-icon,
+.arrow__right-icon{
+  width: 0.8125rem;
+  height: 1.75rem;
+}
+
+.arrow__left-icon{
+  transform: rotate(180deg);
+}
+
+.bars__item,
+.bar__desc-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.bars__list{
+  display: flex;
+}
+
+.bar__picture{
+  width: 31.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3.5rem;
+}
+
+.bar__picture-img{
+  flex-shrink: 0;
+}
+
+.bar__content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar__composition{
+  display: inline-block;
+  margin-bottom: 1.1875rem;
+}
+
+.bar__composition-btn{
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: #60aacc;
+  padding: 10px 19px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.bar__composition-icon{
+  fill: #ffffff;
+  width: 51px;
+  height: 51px;
+  margin-bottom: 3px;
+}
+
+.bar__title{
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 0.3125rem;
+}
+
+.bar__desc{
+  padding-right: 6.625rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.bar__desc-row{
+  margin-bottom: 2rem;
+
+   &:last-child{
+     margin-bottom: 0;
+   }
+}
+
+.bar__option{
+  margin-right: 3.625rem;
+}
+
+.bar__option-name{
+  color: #666666;
+}
+
+.bar__option-size{
+  font-weight: 700;
+}
+
+.bar__price{
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+.bar__price-icon{
+  height: 30px;
+}
+

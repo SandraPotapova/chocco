@@ -51,12 +51,13 @@
                 8 800 903 90 90
               </a>
             </div>
-            <div class="hamburger-menu__icon">
-              <a href="#" class="hamburger-menu__icon-link">
-                <svg class="hamburger-menu__svg">
+            <div class="hamburger">
+                <svg class="hamburger__svg hamburger__svg-menu">
                   <use xlink:href="./sprite.svg#hamburger"></use>
                 </svg>
-              </a>
+                <svg class="hamburger__svg hamburger__svg-close">
+                  <use xlink:href="./sprite.svg#close"></use>
+                </svg>
             </div>
           </div>          
         </header>
@@ -175,7 +176,62 @@
       </div>
     </section>
     <section class="section bars" id="bars">
-
+      <div class="container bars__container">
+        <a href="#" class="arrow__left">
+          <svg class="arrow__left-icon">
+            <use xlink:href="./sprite.svg#arrow"></use>
+          </svg>
+        </a>
+        <ul class="bars__list">
+          <li class="bars__item bar">
+            <div class="bar__picture">
+              <img src="./img/bars/bars-chocco.png" alt="chocco" class="bar__picture-img">
+            </div>
+            <div class="bar__content">
+              <div class="bar__composition">
+                <div class="bar__composition-btn">
+                  <svg class="bar__composition-icon">
+                    <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                  </svg>
+                  Состав
+                </div>
+              </div>
+              <div class="bar__title">Батончик “Гранола виноград”</div>
+              <div class="bar__desc">
+                <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p> 
+              </div>
+              <div class="bar__desc-row">
+                <div class="bar__option">
+                  <div class="bar__option-name">Калорийность</div>
+                  <div class="bar__option-size">110 ккал</div>
+                </div>
+                <div class="bar__option">
+                  <div class="bar__option-name">Вес</div>
+                  <div class="bar__option-size">95 грамм</div>
+                </div>
+              </div>
+                <div class="bar__desc-row">
+                  <div class="bar__price">
+                    <div class="bar__price-value">140</div>
+                    <div>
+                      <svg class="bar__price-icon">
+                        <use xlink:href="./sprite.svg#rub"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="bar__btn">
+                    <button type="button" class="btn">заказать</button>
+                  </div>
+                </div>
+            </div>
+          </li>
+        </ul>       
+        <a href="#" class="arrow__right">
+          <svg class="arrow__right-icon">
+            <use xlink:href="./sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
     </section>
     <section class="section team" id="team">
     <div class="container team__container">
@@ -479,5 +535,7 @@
       </footer>
     </section>
   </div>
+  <script src="./js/menu.js"></script>
+  <script src="./js/team.js"></script>
 </body>
 </html>
