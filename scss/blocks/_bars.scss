@@ -26,16 +26,30 @@
   flex-direction: row;
 }
 
+.bars__item{
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .bars__list{
   display: flex;
 }
 
 .bar__picture{
-  width: 31.25rem;
+  width: 28.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 3.5rem;
+
+  @include tablets{
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .bar__picture-img{
@@ -46,11 +60,19 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  @include tablets{
+    align-items: center;
+  }
 }
 
 .bar__composition{
   display: inline-block;
   margin-bottom: 1.1875rem;
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .bar__composition-btn{
@@ -68,8 +90,8 @@
 
 .bar__composition-icon{
   fill: #ffffff;
-  width: 51px;
-  height: 51px;
+  width: 3.1875rem;
+  height: 3.1875rem;
   margin-bottom: 3px;
 }
 
@@ -82,21 +104,40 @@
 }
 
 .bar__desc{
-  padding-right: 6.625rem;
+  padding-right: 3.625rem;
   color: #666666;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
+
+  @include tablets{
+    padding-right: 0;
+    width: 71%;
+  }
+
+  @include phones{
+    width: 86%;
+  }
 }
 
 .bar__desc-row{
-  margin-bottom: 2rem;
+  margin-bottom: 2.1875rem;
 
    &:last-child{
      margin-bottom: 0;
+     height: 4.6875rem;
    }
 }
 
 .bar__option{
   margin-right: 3.625rem;
+
+  @include tablets{
+    text-align: start;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 .bar__option-name{
@@ -111,9 +152,35 @@
   font-size: 60px;
   font-weight: 300;
   line-height: 60px;
+  display: flex;
+  margin-right: 2.125rem;
 }
 
 .bar__price-icon{
-  height: 30px;
+  height: 1.875rem;
+  width: 1.3125rem;
 }
 
+.bar__price-value{
+  margin-right: 1.25rem;
+}
+
+.bar__price-rub{
+  padding-top: 1rem;
+
+  @include phones{
+    padding-top: 1.47rem;
+  }
+}
+
+.bar__btn{
+  .btn{
+    color: #fff;
+    background-color: #365a49;
+
+    &:hover{
+      color: #365a49;
+    background-color: #fff;
+    }
+  }
+}

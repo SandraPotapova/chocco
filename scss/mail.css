@@ -1217,6 +1217,22 @@ header {
           flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+  .bars__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 .bars__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1224,7 +1240,7 @@ header {
 }
 
 .bar__picture {
-  width: 31.25rem;
+  width: 28.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1235,6 +1251,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__picture {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .bar__picture-img {
@@ -1255,9 +1278,23 @@ header {
           flex-direction: column;
 }
 
+@media screen and (max-width: 768px) {
+  .bar__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .bar__composition {
   display: inline-block;
   margin-bottom: 1.1875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__composition {
+    display: none;
+  }
 }
 
 .bar__composition-btn {
@@ -1275,8 +1312,8 @@ header {
 
 .bar__composition-icon {
   fill: #ffffff;
-  width: 51px;
-  height: 51px;
+  width: 3.1875rem;
+  height: 3.1875rem;
   margin-bottom: 3px;
 }
 
@@ -1289,21 +1326,45 @@ header {
 }
 
 .bar__desc {
-  padding-right: 6.625rem;
+  padding-right: 3.625rem;
   color: #666666;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__desc {
+    padding-right: 0;
+    width: 71%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bar__desc {
+    width: 86%;
+  }
 }
 
 .bar__desc-row {
-  margin-bottom: 2rem;
+  margin-bottom: 2.1875rem;
 }
 
 .bar__desc-row:last-child {
   margin-bottom: 0;
+  height: 4.6875rem;
 }
 
 .bar__option {
   margin-right: 3.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bar__option {
+    text-align: start;
+  }
+  .bar__option:last-child {
+    margin-right: 0;
+  }
 }
 
 .bar__option-name {
@@ -1318,10 +1379,39 @@ header {
   font-size: 60px;
   font-weight: 300;
   line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2.125rem;
 }
 
 .bar__price-icon {
-  height: 30px;
+  height: 1.875rem;
+  width: 1.3125rem;
+}
+
+.bar__price-value {
+  margin-right: 1.25rem;
+}
+
+.bar__price-rub {
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .bar__price-rub {
+    padding-top: 1.47rem;
+  }
+}
+
+.bar__btn .btn {
+  color: #fff;
+  background-color: #365a49;
+}
+
+.bar__btn .btn:hover {
+  color: #365a49;
+  background-color: #fff;
 }
 
 .team {
@@ -1450,6 +1540,7 @@ header {
   font-size: 1.3125rem;
   font-weight: 700;
   position: relative;
+  cursor: pointer;
 }
 
 .team-accord__name:after {
@@ -1661,6 +1752,7 @@ header {
   top: 0;
   bottom: 0;
   width: 100px;
+  cursor: pointer;
 }
 
 .choice__element-title {
@@ -1691,7 +1783,6 @@ header {
 
 .choice__element-close {
   position: absolute;
-  top: 3%;
   right: 5%;
   cursor: pointer;
   display: none;
