@@ -177,56 +177,225 @@
     </section>
     <section class="section bars" id="bars">
       <div class="container bars__container">
-        <a href="#" class="arrow__left">
+        <a href="#" class="arrow--left">
           <svg class="arrow__left-icon">
             <use xlink:href="./sprite.svg#arrow"></use>
           </svg>
         </a>
-        <ul class="bars__list">
-          <li class="bars__item bar">
-            <div class="bar__picture">
-              <img src="./img/bars/bars-chocco.png" alt="chocco" class="bar__picture-img">
-            </div>
-            <div class="bar__content">
-              <div class="bar__composition">
-                <div class="bar__composition-btn">
-                  <svg class="bar__composition-icon">
-                    <use xlink:href="./sprite.svg#chocolate-bar"></use>
-                  </svg>
-                  Состав
-                </div>
+        <div class="bars__wrap">
+          <ul class="bars__list">
+            <li class="bars__item bar">
+              <div class="bar__picture">
+                <img src="./img/bars/bars-chocco.png" alt="chocco" class="bar__picture-img">
               </div>
-              <div class="bar__title">Батончик “Гранола виноград”</div>
-              <div class="bar__desc">
-                <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p> 
-              </div>
-              <div class="bar__desc-row">
-                <div class="bar__option">
-                  <div class="bar__option-name">Калорийность</div>
-                  <div class="bar__option-size">110 ккал</div>
+              <div class="bar__content">
+                <div class="bar__composition">
+                  <div class="bar__composition-btn">
+                    <svg class="bar__composition-icon">
+                      <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                    </svg>
+                    Состав
+                  </div>
+                  <div class="bar__composition-block">
+                    <ul class="bar__composition-list">
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#grape"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Виноград</div>
+                        <div class="composition__weight">25г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#nut"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Грецкий орех</div>
+                        <div class="composition__weight">32г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#almond"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Кунжутное семя</div>
+                        <div class="composition__weight">20г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#powder"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Сухое молоко</div>
+                        <div class="composition__weight">10г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#apitherapy"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Зам. сахара</div>
+                        <div class="composition__weight">4г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#beans"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Какао бобы</div>
+                        <div class="composition__weight">4г</div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="bar__option">
-                  <div class="bar__option-name">Вес</div>
-                  <div class="bar__option-size">95 грамм</div>
+                <div class="bar__title">Батончик “Гранола виноград”</div>
+                <div class="bar__desc">
+                  <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p> 
                 </div>
-              </div>
                 <div class="bar__desc-row">
-                  <div class="bar__price">
-                    <div class="bar__price-value">140</div>
-                    <div class="bar__price-rub">
-                      <svg class="bar__price-icon">
-                        <use xlink:href="./sprite.svg#rub"></use>
-                      </svg>
+                  <div class="bar__option">
+                    <div class="bar__option-name">Калорийность</div>
+                    <div class="bar__option-size">110 ккал</div>
+                  </div>
+                  <div class="bar__option">
+                    <div class="bar__option-name">Вес</div>
+                    <div class="bar__option-size">95 грамм</div>
+                  </div>
+                </div>
+                  <div class="bar__desc-row">
+                    <div class="bar__price">
+                      <div class="bar__price-value">140</div>
+                      <div class="bar__price-rub">
+                        <svg class="bar__price-icon">
+                          <use xlink:href="./sprite.svg#rub"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="bar__btn">
+                      <button type="button" class="btn">заказать</button>
                     </div>
                   </div>
-                  <div class="bar__btn">
-                    <button type="button" class="btn">заказать</button>
+              </div>
+            </li>
+            <li class="bars__item bar">
+              <div class="bar__picture">
+                <img src="./img/bars/bars-chocco2.png" alt="chocco" class="bar__picture-img">
+              </div>
+              <div class="bar__content">
+                <div class="bar__composition">
+                  <div class="bar__composition-btn">
+                    <svg class="bar__composition-icon">
+                      <use xlink:href="./sprite.svg#chocolate-bar"></use>
+                    </svg>
+                    Состав
+                  </div>
+                  <div class="bar__composition-block">
+                    <ul class="bar__composition-list">
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#oat"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Овёс</div>
+                        <div class="composition__weight">25г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#seaweed"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Мор. водоросли</div>
+                        <div class="composition__weight">15г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#almond"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Миндаль</div>
+                        <div class="composition__weight">20г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#powder"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Сухое молоко</div>
+                        <div class="composition__weight">10г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#seeds"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Тыкв. семечки</div>
+                        <div class="composition__weight">20г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#apitherapy"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Зам. сахара</div>
+                        <div class="composition__weight">4г</div>
+                      </li>
+                      <li class="bar__composition-item composition">
+                        <div class="composition__icon">
+                          <svg class="composition__icon-svg">
+                            <use xlink:href="./sprite.svg#beans"></use>
+                          </svg>
+                        </div>
+                        <div class="composition__name">Какао бобы</div>
+                        <div class="composition__weight">4г</div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-            </div>
-          </li>
-        </ul>       
-        <a href="#" class="arrow__right">
+                <div class="bar__title">Батончик “Морские водоросли”</div>
+                <div class="bar__desc">
+                  <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p> 
+                </div>
+                <div class="bar__desc-row">
+                  <div class="bar__option">
+                    <div class="bar__option-name">Калорийность</div>
+                    <div class="bar__option-size">120 ккал</div>
+                  </div>
+                  <div class="bar__option">
+                    <div class="bar__option-name">Вес</div>
+                    <div class="bar__option-size">98 грамм</div>
+                  </div>
+                </div>
+                  <div class="bar__desc-row">
+                    <div class="bar__price">
+                      <div class="bar__price-value">140</div>
+                      <div class="bar__price-rub">
+                        <svg class="bar__price-icon">
+                          <use xlink:href="./sprite.svg#rub"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="bar__btn">
+                      <button type="button" class="btn">заказать</button>
+                    </div>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>               
+        <a href="#" class="arrow--right">
           <svg class="arrow__right-icon">
             <use xlink:href="./sprite.svg#arrow"></use>
           </svg>
@@ -537,6 +706,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/bars.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/choice.js"></script>
 </body>

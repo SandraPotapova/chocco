@@ -568,6 +568,10 @@ body {
   }
 }
 
+.hero__text .btn {
+  margin-bottom: 4.1875rem;
+}
+
 @media screen and (max-width: 768px) {
   .hero__text {
     width: 90%;
@@ -829,6 +833,7 @@ header {
     transition: all 0.3s;
     z-index: 20;
     width: 100%;
+    background-color: #333537;
   }
   .menu--active {
     visibility: visible;
@@ -857,7 +862,10 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 5.7rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
   }
 }
 
@@ -873,7 +881,7 @@ header {
   .menu__item {
     margin-left: 0;
     padding: 1rem 0;
-    font-size: 21px;
+    font-size: 36px;
   }
 }
 
@@ -919,7 +927,6 @@ header {
   border-radius: 1.8125rem;
   font-weight: 800;
   background-color: #fff;
-  margin-bottom: 4.1875rem;
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
@@ -1217,6 +1224,39 @@ header {
           flex-direction: row;
 }
 
+.bars__wrap {
+  overflow: hidden;
+  width: 58.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bars__wrap {
+    width: 37.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bars__wrap {
+    width: 36.9rem;
+  }
+}
+
+.bars__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
+  right: 0;
+}
+
+.bars__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 58.75rem;
+}
+
 @media screen and (max-width: 768px) {
   .bars__item {
     -webkit-box-orient: vertical;
@@ -1230,13 +1270,23 @@ header {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    width: 37.3rem;
   }
 }
 
-.bars__list {
+@media screen and (max-width: 480px) {
+  .bars__item {
+    width: 36.9rem;
+  }
+}
+
+.bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bar__picture {
@@ -1289,6 +1339,13 @@ header {
 .bar__composition {
   display: inline-block;
   margin-bottom: 1.1875rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar__composition:hover .bar__composition-block {
+  display: block;
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 768px) {
@@ -1412,6 +1469,49 @@ header {
 .bar__btn .btn:hover {
   color: #365a49;
   background-color: #fff;
+}
+
+.bar__composition-block {
+  display: none;
+  position: absolute;
+  width: 16.875rem;
+  top: 0;
+  left: 5.625rem;
+  background-color: #fff;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+  padding: 1.5625rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.composition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.composition__icon {
+  margin-right: 25px;
+}
+
+.composition__icon-svg {
+  width: 35px;
+  height: 35px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.composition__name {
+  margin-right: auto;
 }
 
 .team {
