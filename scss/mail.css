@@ -866,6 +866,8 @@ header {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1231,13 +1233,13 @@ header {
 
 @media screen and (max-width: 768px) {
   .bars__wrap {
-    width: 37.3rem;
+    width: 39.3rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bars__wrap {
-    width: 36.9rem;
+    width: 33.9rem;
   }
 }
 
@@ -1270,13 +1272,13 @@ header {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    width: 37.3rem;
+    width: 39.3rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bars__item {
-    width: 36.9rem;
+    width: 33.9rem;
   }
 }
 
@@ -1305,7 +1307,6 @@ header {
 
 @media screen and (max-width: 768px) {
   .bar__picture {
-    margin-right: 0;
     margin-bottom: 1rem;
   }
 }
