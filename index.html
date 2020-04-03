@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./scss/mail.css">
+  <link rel="stylesheet" href="./scss/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
   <title>CHOCCO</title>
 </head>
@@ -413,9 +413,9 @@
             </div>
             <div class="team-accord__name">Борис Федорович</div>
             <div class="team-accord__desc">
-              <div class="team-accord__position">Оператор</div>
+              <div class="team-accord__position">Главный технолог</div>
               <div class="team-accord__text">
-                С радостью поможет подобрать батончики и оформить заказ. 
+                Отвечает за вкусовые качества и калорийность.
               </div>
             </div>
           </div>
@@ -427,14 +427,14 @@
             </div>
             <div class="team-accord__name">Алла Иванова</div>
             <div class="team-accord__desc">
-              <div class="team-accord__position">Оператор</div>
+              <div class="team-accord__position">Специалист по упаковке</div>
               <div class="team-accord__text">
-                С радостью поможет подобрать батончики и оформить заказ. 
+                Автор запоминающегося стиля наших батончиков.
               </div>
             </div>
           </div>
         </li>
-        <li class="team__item team-accord team-accord--active">
+        <li class="team__item team-accord">
           <div class="team-accord__wrap">
             <div class="team-accord__avatar">
               <img src="./img/team/team-avatar3.png" alt="avatar" class="team-accord__avatar-img">
@@ -470,7 +470,7 @@
       <h1 class="section__title">меню</h1>
       <div class="choice__accordeon">
         <ul class="choice__accordeon-list">
-          <li class="choice__accordeon-item choice__element-milk choice__accordeon-item--active">
+          <li class="choice__accordeon-item choice__element-milk">
             <div class="choice__element-label">
               <div class="choice__element-title">Батончики с молоком</div>
             </div>
@@ -539,23 +539,23 @@
               <div class="reviews__name">Алёна Хмельницкая</div>
             </li>
             <li class="reviews__item">
-              <img src="./img/reviews/rw-img1.png" alt="avatar" class="reviews__avatar">
+              <img src="./img/reviews/rw-img2.png" alt="avatar" class="reviews__avatar">
               <div class="reviews__content">
-                <h3>Лучший перекус</h3>
-                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</p>
-              <div class="reviews__name">Алёна Хмельницкая</div>
+                <h3>Лучшие батончики премиум уровня</h3>
+                <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+              <div class="reviews__name">Мария Орлова</div>
             </li>
             <li class="reviews__item">
-              <img src="./img/reviews/rw-img1.png" alt="avatar" class="reviews__avatar">
+              <img src="./img/reviews/rw-img3.png" alt="avatar" class="reviews__avatar">
               <div class="reviews__content">
-                <h3>Лучший перекус</h3>
-                <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</p>
-              <div class="reviews__name">Алёна Хмельницкая</div>
+                <h3>Идеально подходят для спортсменов</h3>
+                <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</p>
+              <div class="reviews__name">Вадим Грачев</div>
             </li>
           </ul>
         </div>
         <ul class="reviews__avatar-list">
-          <li class="reviews__avatar-item reviews__avatar-item--activ">
+          <li class="reviews__avatar-item reviews__avatar-item--active">
             <img src="./img/reviews/rw-img1.png" alt="avatar" class="reviews__avatar-icon">
           </li>
           <li class="reviews__avatar-item">
@@ -704,10 +704,20 @@
       </footer>
     </section>
   </div>
+  <script type="template" id="overlayTemplate">
+    <div class="overlay">
+      <div class="container overlay__container">
+        <div class="overlay__content"></div>
+        <a href="#" class="overlay__close">закрыть</a>
+      </div>
+    </div>
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./js/overlay.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/bars.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/choice.js"></script>
+  <script src="./js/reviews.js"></script>
 </body>
 </html>

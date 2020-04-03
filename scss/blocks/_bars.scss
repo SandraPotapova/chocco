@@ -28,14 +28,14 @@
 
 .bars__wrap{
   overflow: hidden;
-  width: 58.75rem;
+  max-width: 58.75rem;
 
   @include tablets{
-    width: 39.3rem;
+    max-width: 39.3rem;
   }
 
   @include phones{
-    width: 33.9rem;
+    max-width: 33.9rem;
   }
 }
 
@@ -49,18 +49,18 @@
 
 .bars__item{
   flex-shrink: 0;
-  width: 58.75rem;
+  max-width: 58.75rem;
 
   @include tablets{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 39.3rem;
+    max-width: 39.3rem;
   }
 
   @include phones{
-    width: 33.9rem;
+    max-width: 33.9rem;
   }
 }
 

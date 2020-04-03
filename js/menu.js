@@ -10,12 +10,11 @@ hamburger.addEventListener("click", (e) =>{
     hamburger.classList.add("hamburger--active");
     menu.classList.add("menu--active");
   }
-})
+});
 
 menuLink.forEach(link => {
   link.addEventListener('click', (e) => {
     hamburger.classList.remove("hamburger--active");
     menu.classList.remove("menu--active");
   })
-})
-
+});
