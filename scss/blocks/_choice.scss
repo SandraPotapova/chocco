@@ -66,8 +66,8 @@
   overflow: hidden;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 100px;
-  width: 100px;
+  flex-basis: 6.25rem;
+  width: 6.25rem;
   transition: all 0.5s;
   background-color: rgba(51, 53, 55, 0.8);
 }
@@ -105,7 +105,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 100px;
+  width: 6.25rem;
   cursor: pointer;
 }
 

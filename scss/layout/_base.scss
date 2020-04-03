@@ -88,6 +88,10 @@ body{
   @include phones{
     min-height: 61.54rem;
   }
+
+  @include min{
+    min-height: 80rem;
+  }
 }
 
 .container{
