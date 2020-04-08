@@ -1,13 +1,13 @@
 .maps__container{
-  background-image: url(../img/maps/map.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  //background-image: url(../img/maps/map.png);
+ // background-position: center center;
+ /// background-repeat: no-repeat;
+ /// background-size: cover;
   height: 100%;
-  position: relative;
+ //@at-root position: relative;
 }
 
-.maps__logo-one{
+/*.maps__logo-one{
   position: absolute;
   top: 19%;
   left: 33%;
@@ -29,4 +29,9 @@
   position: absolute;
   top: 68%;
   left: 30%;
+}*/
+
+.map__marker{
+  width: 46px;
+  height: 57px;
 }

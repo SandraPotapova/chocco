@@ -1,4 +1,4 @@
-const openButton = document.querySelector(".order__form-button");
+//const openButton = document.querySelector(".order__form-button");
 const template = document.querySelector("#overlayTemplate").innerHTML;
 const overlay = createOverlay(template);
 
@@ -38,4 +38,38 @@ function createOverlay(template) {
       contentElement.innerHTML = content;
     }
   };
-}
+};
+
+
+
+/*const openButton = document.querySelector(".order__form-button");
+const orderForm = document.querySelector("#order-form");
+
+openButton.addEventListener("click", function(event) {
+  event.preventDefault(); 
+  
+    if (orderForm.checkValidity()) {
+  
+    const data = new FormData();
+    data.append("name", orderForm.elements.name.value);
+    data.append("phone", orderForm.elements.phone.value);
+    data.append("comment", orderForm.elements.comment.value);
+    data.append("to", "sandra_potapova@mail.ru");
+  
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = "json";
+    xhr.open("POST", "https://webdev-api.loftschool.com/sendmail", true);
+    xhr.send(data);
+
+    xhr.addEventListener('load', () => {
+      if (xhr.response.status) {
+        overlay.open();
+        overlay.setContent("сообщение отправлено");
+        form.reset();
+      } else {
+        overlay.open();
+        overlay.setContent("сообщение  не отправлено");
+      }
+    })
+  };
+});*/

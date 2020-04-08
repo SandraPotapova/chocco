@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
-const menuLink = document.querySelectorAll(".menu__link")
+const menuLink = document.querySelectorAll(".menu__link");
 
 hamburger.addEventListener("click", (e) =>{
   if (hamburger.classList.contains("hamburger--active")) {
